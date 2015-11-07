@@ -1,0 +1,81 @@
+// COLORS
+@green: hsl(90, 45%, 58%);
+@yellow: hsl(37, 70%, 65%);
+@red: hsl(5, 60%, 65%);
+@purple: hsl(288, 40%, 70%);
+@blue: hsl(182, 35%, 68%);
+@orange: hsl(20, 65%, 60%);
+@white: #ffffff;
+
+@very-light-brown: hsl(34, 20%, 81%);
+@more-light-brown: hsl(34, 15%, 76%);
+@light-brown: hsl(34, 10%, 55%);
+@brown: hsl(34, 10%, 44%);
+@dark-brown: hsl(34, 10%, 29%);
+@very-dark-brown: hsl(34, 10%, 19%);
+
+// GUTTER
+@gutter-text: @brown;
+@gutter-text-highlight: @very-light-brown;
+@gutter-background: @very-dark-brown;
+@gutter-background-highlight: @dark-brown;
+
+// CODE VIEW
+@code-background: @very-dark-brown; // editor background
+@code-font: Inconsolata;
+@code-font-color: @more-light-brown; // default editor text
+
+// SYNTAX COLORS
+@comment: @brown; // comments, duhr.
+@comment-bg: none; // comments, duhr.
+@comment-punc: @comment;
+@string: @yellow; // 'value' of var='value', "name.png" or src="name.png"
+@constant: @purple; // true of var x = true, {{}} of {{> hbs_include}}
+@variable: @very-light-brown; // foo or function(foo), hbs_include of {{> hbs_include}}, http://dom.com/ of url(http://dom.com/)
+@support: @green; // module of module.exports, color of color: rgb(0,0,0)
+@entity: @green; // exports of module.exports, <div id= of <div id="#id">, . of .className
+@keyword: @red; // = of var a = b, if of if a = b, px of font-size: 13px;
+@storage: @blue; // var of var a = b;
+@meta: @blue; // none of border: none;
+@function-param: @orange;
+
+@error: @red;
+
+@regex: @string;
+
+@numeric: @purple;
+@quotes: @code-font-color;
+
+@markup: @code-font-color;
+@unknown: @code-font-color;
+
+// MISC COLORS
+@invisible: @dark-brown;
+@guides: @dark-brown;
+@cursor-color: @code-font-color;
+@cursor-width: 2px;
+@selected: rgba(85,181,219,0.3); // selected background color
+@selected-border: rgba(85,181,219,0.9);
+@selected-line: rgba(16,17,18,0.2);
+
+// HTML
+@tag: @red;
+@tag-entity: @blue;
+@element-attr: @green;
+@class: @red;
+@id: @red;
+@block: @blue;
+@inline: lighten(@blue, 25%);
+
+@entity-function: @blue;
+@brackets: @code-font-color;
+@punctuation: @code-font-color;
+
+@search-bg: transparent;
+@search-border: solid 1px @blue;
+
+@search-active-bg: @blue;
+@search-active-border: solid 1px @blue;
+
+@search-item-border: @blue;
+@search-item-bg: @red;
